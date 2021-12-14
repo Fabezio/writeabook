@@ -1,0 +1,33 @@
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.btn {
+	text-transform: uppercase;
+	font-size: 1.25em;
+	font-weight: 400;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 8px;
+	opacity: 0.8;
+	color: #444;
+	margin: 1em 0;
+}
+.btn-group {
+	// opacity: .8;
+	padding: 0px 0;
+	border-radius: 8px;
+	color: #444;
+	display: flex;
+	z-index: 1;
+	.btn {
+		border: none;
+		border-radius: 0;
+		z-index: 0;
+		// opacity: .75;
+		&:focus,
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
